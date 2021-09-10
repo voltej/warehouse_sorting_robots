@@ -1,351 +1,3 @@
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
-  ** incremental compilation may be fatally broken for this module **
-
-[33m[1m┌ [22m[39m[33m[1mWarning: [22m[39mPackage Warehouse does not have Random in its dependencies:
-[33m[1m│ [22m[39m- If you have Warehouse checked out for development and have
-[33m[1m│ [22m[39m  added Random as a dependency but haven't updated your primary
-[33m[1m│ [22m[39m  environment's manifest file, try `Pkg.resolve()`.
-[33m[1m│ [22m[39m- Otherwise you may need to report an issue with Warehouse
-[33m[1m└ [22m[39mLoading Random into Warehouse from project dependency, future warnings for Warehouse are suppressed.
-WARNING: Method definition generate_warehouse_struct(Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_warehouse_struct##kw(Any, typeof(Warehouse.generate_warehouse_struct), Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.Robot})(Int64, Int64, Int64, Int64, Array{LightGraphs.SimpleGraphs.SimpleEdge{Int64}, 1}, Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.Robot})(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.PlotABM{AbstractSpace}})(Any) where {AbstractSpace} in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:154 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition pl(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:157 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_colors_spots(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:162 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_plot() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:210 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition terminate_warehouse_sim(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_in_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:280 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition give_robot_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:284 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Int64, Int64, Int64, Int64, Any, Any, Any, Array{Int64, 1}) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:294 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Any, Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:294 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(String, Warehouse.WarehouseDefinition, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:305 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:305 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse(Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:311 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse##kw(Any, typeof(Warehouse.init_warehouse), Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:311 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse_with_plot(Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:336 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse_with_plot##kw(Any, typeof(Warehouse.init_warehouse_with_plot), Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:336 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition animate_warehouse() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:356 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition animate_warehouse##kw(Any, typeof(Warehouse.animate_warehouse)) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:356 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_experiment_name(Warehouse.ExperimentDefinition, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:370 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_warehouse_struct(Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_warehouse_struct##kw(Any, typeof(Warehouse.generate_warehouse_struct), Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.Robot})(Int64, Int64, Int64, Int64, Array{LightGraphs.SimpleGraphs.SimpleEdge{Int64}, 1}, Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.Robot})(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.PlotABM{AbstractSpace}})(Any) where {AbstractSpace} in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:154 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition pl(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:157 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_colors_spots(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:162 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_plot() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:210 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition terminate_warehouse_sim(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_in_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:280 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition give_robot_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:284 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Int64, Int64, Int64, Int64, Any, Any, Any, Array{Int64, 1}) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:294 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Any, Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:294 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(String, Warehouse.WarehouseDefinition, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:305 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:305 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse(Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:311 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse##kw(Any, typeof(Warehouse.init_warehouse), Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:311 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse_with_plot(Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:336 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse_with_plot##kw(Any, typeof(Warehouse.init_warehouse_with_plot), Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:336 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition animate_warehouse() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:356 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition animate_warehouse##kw(Any, typeof(Warehouse.animate_warehouse)) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:356 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_experiment_name(Warehouse.ExperimentDefinition, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:370 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition a_star(LightGraphs.AbstractGraph{U}, Integer, Integer) where {U} in module LightGraphs at /home/datalab/.julia/packages/LightGraphs/IgJif/src/shortestpaths/astar.jl:67 overwritten in module Warehouse at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:27.
-  ** incremental compilation may be fatally broken for this module **
-
-^X[33m[1m┌ [22m[39m[33m[1mWarning: [22m[39mPackage Warehouse does not have Dates in its dependencies:
-[33m[1m│ [22m[39m- If you have Warehouse checked out for development and have
-[33m[1m│ [22m[39m  added Dates as a dependency but haven't updated your primary
-[33m[1m│ [22m[39m  environment's manifest file, try `Pkg.resolve()`.
-[33m[1m│ [22m[39m- Otherwise you may need to report an issue with Warehouse
-[33m[1m└ [22m[39mLoading Dates into Warehouse from project dependency, future warnings for Warehouse are suppressed.
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_warehouse_struct(Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_warehouse_struct##kw(Any, typeof(Warehouse.generate_warehouse_struct), Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.Robot})(Int64, Int64, Int64, Int64, Array{LightGraphs.SimpleGraphs.SimpleEdge{Int64}, 1}, Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.Robot})(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.PlotABM{AbstractSpace}})(Any) where {AbstractSpace} in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:154 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition pl(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:157 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_colors_spots(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:162 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_plot() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:210 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition terminate_warehouse_sim(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition terminate_warehouse_sim##kw(Any, typeof(Warehouse.terminate_warehouse_sim), Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_in_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:283 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition give_robot_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:287 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Int64, Int64, Int64, Int64, Any, Any, Any, Array{Int64, 1}) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:297 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Any, Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:297 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(String, Warehouse.WarehouseDefinition, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:308 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:308 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse(Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:314 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse##kw(Any, typeof(Warehouse.init_warehouse), Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:314 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse_with_plot(Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:340 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse_with_plot##kw(Any, typeof(Warehouse.init_warehouse_with_plot), Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:340 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition animate_warehouse() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:360 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition animate_warehouse##kw(Any, typeof(Warehouse.animate_warehouse)) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:360 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_experiment_name(Warehouse.ExperimentDefinition, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:374 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_warehouse_struct(Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_warehouse_struct##kw(Any, typeof(Warehouse.generate_warehouse_struct), Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.Robot})(Int64, Int64, Int64, Int64, Array{LightGraphs.SimpleGraphs.SimpleEdge{Int64}, 1}, Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.Robot})(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.PlotABM{AbstractSpace}})(Any) where {AbstractSpace} in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:154 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition pl(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:157 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_colors_spots(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:162 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition generate_plot() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:210 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition terminate_warehouse_sim(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition terminate_warehouse_sim##kw(Any, typeof(Warehouse.terminate_warehouse_sim), Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition robot_in_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:283 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition give_robot_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:287 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Int64, Int64, Int64, Int64, Any, Any, Any, Array{Int64, 1}) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:297 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Any, Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:297 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(String, Warehouse.WarehouseDefinition, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:308 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:308 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse(Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:314 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse##kw(Any, typeof(Warehouse.init_warehouse), Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:314 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse_with_plot(Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:340 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition init_warehouse_with_plot##kw(Any, typeof(Warehouse.init_warehouse_with_plot), Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:340 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition animate_warehouse() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:360 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition animate_warehouse##kw(Any, typeof(Warehouse.animate_warehouse)) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:360 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition get_experiment_name(Warehouse.ExperimentDefinition, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:374 overwritten on the same line (check for duplicate calls to `include`).
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition a_star(LightGraphs.AbstractGraph{U}, Integer, Integer) where {U} in module LightGraphs at /home/datalab/.julia/packages/LightGraphs/IgJif/src/shortestpaths/astar.jl:67 overwritten in module Warehouse at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:27.
-  ** incremental compilation may be fatally broken for this module **
-
 [33m[1m┌ [22m[39m[33m[1mWarning: [22m[39mPackage Warehouse does not have Dates in its dependencies:
 [33m[1m│ [22m[39m- If you have Warehouse checked out for development and have
 [33m[1m│ [22m[39m  added Dates as a dependency but haven't updated your primary
@@ -523,14 +175,248 @@ WARNING: Method definition get_experiment_name(Warehouse.ExperimentDefinition, I
 WARNING: Method definition a_star(LightGraphs.AbstractGraph{U}, Integer, Integer) where {U} in module LightGraphs at /home/datalab/.julia/packages/LightGraphs/IgJif/src/shortestpaths/astar.jl:67 overwritten in module Warehouse at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:27.
   ** incremental compilation may be fatally broken for this module **
 
-[91m[1mERROR: [22m[39mLoadError: IOError: mkdir("/home/datalab/projects/agents/warehouse/experiments/cbs17x15_1000_20/51"; mode=0o777): no such file or directory (ENOENT)
-Stacktrace:
- [1] [0m[1muv_error[22m
-[90m   @ [39m[90m./[39m[90;4mlibuv.jl:97[0m[90m [inlined][39m
- [2] [0m[1mmkdir[22m[0m[1m([22m[90mpath[39m::[0mString; [90mmode[39m::[0mUInt16[0m[1m)[22m
-[90m   @ [39m[90mBase.Filesystem[39m [90m./[39m[90;4mfile.jl:179[0m
- [3] [0m[1mmkdir[22m[0m[1m([22m[90mpath[39m::[0mString[0m[1m)[22m
-[90m   @ [39m[90mBase.Filesystem[39m [90m./[39m[90;4mfile.jl:172[0m
- [4] top-level scope
-[90m   @ [39m[90m~/projects/agents/warehouse/experiments/[39m[90;4me_cbs17x15_1000_20_51.jl:13[0m
-in expression starting at /home/datalab/projects/agents/warehouse/experiments/e_cbs17x15_1000_20_51.jl:12
+^C
+signal (2): Interrupt
+in expression starting at /home/datalab/projects/agents/warehouse/experiments/e_cbs17x15_1000_20_1.jl:22
+sweep_page at /buildworker/worker/package_linux64/build/src/gc.c:1316 [inlined]
+sweep_pool_page at /buildworker/worker/package_linux64/build/src/gc.c:1384 [inlined]
+sweep_pool_pagetable0 at /buildworker/worker/package_linux64/build/src/gc.c:1404 [inlined]
+sweep_pool_pagetable1 at /buildworker/worker/package_linux64/build/src/gc.c:1424 [inlined]
+sweep_pool_pagetable at /buildworker/worker/package_linux64/build/src/gc.c:1454 [inlined]
+gc_sweep_pool at /buildworker/worker/package_linux64/build/src/gc.c:1529
+_jl_gc_collect at /buildworker/worker/package_linux64/build/src/gc.c:3147
+jl_gc_collect at /buildworker/worker/package_linux64/build/src/gc.c:3240
+maybe_collect at /buildworker/worker/package_linux64/build/src/gc.c:879 [inlined]
+jl_gc_pool_alloc at /buildworker/worker/package_linux64/build/src/gc.c:1203
+unknown function (ip: 0x7f4b54fe582a)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+a_star_impl! at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:84
+unknown function (ip: 0x7f4b54fe518c)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+a_star at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:54
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+a_star at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:35
+a_star at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:35
+unknown function (ip: 0x7f4b54fe2d05)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+cbs at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:226
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+warehouse_step_cbs! at /home/datalab/projects/agents/warehouse/src/cbs.jl:97
+step! at /home/datalab/.julia/packages/Agents/y6YAg/src/simulations/step.jl:53
+#_run!#176 at /home/datalab/.julia/packages/Agents/y6YAg/src/simulations/collect.jl:145
+unknown function (ip: 0x7f4b54fb83cc)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+_run!##kw at /home/datalab/.julia/packages/Agents/y6YAg/src/simulations/collect.jl:130
+#run!#175 at /home/datalab/.julia/packages/Agents/y6YAg/src/simulations/collect.jl:114 [inlined]
+run!##kw at /home/datalab/.julia/packages/Agents/y6YAg/src/simulations/collect.jl:106
+unknown function (ip: 0x7f4b54fb17f6)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+top-level scope at /home/datalab/projects/agents/warehouse/experiments/e_cbs17x15_1000_20_1.jl:28
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:871
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:825
+jl_toplevel_eval_in at /buildworker/worker/package_linux64/build/src/toplevel.c:929
+eval at ./boot.jl:360 [inlined]
+include_string at ./loading.jl:1116
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+_include at ./loading.jl:1170
+include at ./Base.jl:386
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+exec_options at ./client.jl:285
+_start at ./client.jl:485
+jfptr__start_34281.clone_1 at /home/datalab/projects/agents/julia-1.6.2/lib/julia/sys.so (unknown line)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+true_main at /buildworker/worker/package_linux64/build/src/jlapi.c:560
+repl_entrypoint at /buildworker/worker/package_linux64/build/src/jlapi.c:702
+main at /buildworker/worker/package_linux64/build/cli/loader_exe.c:51
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+_start at /home/datalab/projects/agents/julia-1.6.2/bin/julia (unknown line)
+unknown function (ip: (nil))
+Allocations: 169524408440 (Pool: 169512888161; Big: 11520279); GC: 21997
+[33m[1m┌ [22m[39m[33m[1mWarning: [22m[39mPackage Warehouse does not have Dates in its dependencies:
+[33m[1m│ [22m[39m- If you have Warehouse checked out for development and have
+[33m[1m│ [22m[39m  added Dates as a dependency but haven't updated your primary
+[33m[1m│ [22m[39m  environment's manifest file, try `Pkg.resolve()`.
+[33m[1m│ [22m[39m- Otherwise you may need to report an issue with Warehouse
+[33m[1m└ [22m[39mLoading Dates into Warehouse from project dependency, future warnings for Warehouse are suppressed.
+WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition generate_warehouse_struct(Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition generate_warehouse_struct##kw(Any, typeof(Warehouse.generate_warehouse_struct), Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.Robot})(Int64, Int64, Int64, Int64, Array{LightGraphs.SimpleGraphs.SimpleEdge{Int64}, 1}, Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.Robot})(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.PlotABM{AbstractSpace}})(Any) where {AbstractSpace} in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:154 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition pl(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:157 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_colors_spots(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:162 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition generate_plot() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:210 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition terminate_warehouse_sim(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition terminate_warehouse_sim##kw(Any, typeof(Warehouse.terminate_warehouse_sim), Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_in_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:283 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition give_robot_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:287 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Int64, Int64, Int64, Int64, Any, Any, Any, Array{Int64, 1}) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:297 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Any, Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:297 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(String, Warehouse.WarehouseDefinition, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:308 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:308 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition init_warehouse(Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:314 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition init_warehouse##kw(Any, typeof(Warehouse.init_warehouse), Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:314 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition init_warehouse_with_plot(Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:340 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition init_warehouse_with_plot##kw(Any, typeof(Warehouse.init_warehouse_with_plot), Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:340 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition animate_warehouse() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:360 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition animate_warehouse##kw(Any, typeof(Warehouse.animate_warehouse)) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:360 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition get_experiment_name(Warehouse.ExperimentDefinition, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:374 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition generate_warehouse_struct(Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition generate_warehouse_struct##kw(Any, typeof(Warehouse.generate_warehouse_struct), Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:4 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.Robot})(Int64, Int64, Int64, Int64, Array{LightGraphs.SimpleGraphs.SimpleEdge{Int64}, 1}, Int64, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.Robot})(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:66 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.PlotABM{AbstractSpace}})(Any) where {AbstractSpace} in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:154 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition pl(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:157 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_colors_spots(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:162 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition generate_plot() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:210 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition get_load_spot(Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:75 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:216.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_sizes_spots(Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:183 overwritten at /home/datalab/projects/agents/warehouse/src/warehouse.jl:248.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition terminate_warehouse_sim(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition terminate_warehouse_sim##kw(Any, typeof(Warehouse.terminate_warehouse_sim), Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:272 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition robot_in_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:283 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition give_robot_destination(Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:287 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Int64, Int64, Int64, Int64, Any, Any, Any, Array{Int64, 1}) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:297 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.WarehouseDefinition})(Any, Any, Any, Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:297 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(String, Warehouse.WarehouseDefinition, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:308 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition (::Type{Warehouse.ExperimentDefinition})(Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:308 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition init_warehouse(Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:314 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition init_warehouse##kw(Any, typeof(Warehouse.init_warehouse), Any, Any, Any, Any, Any) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:314 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition init_warehouse_with_plot(Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:340 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition init_warehouse_with_plot##kw(Any, typeof(Warehouse.init_warehouse_with_plot), Warehouse.WarehouseDefinition) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:340 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition animate_warehouse() in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:360 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition animate_warehouse##kw(Any, typeof(Warehouse.animate_warehouse)) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:360 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition get_experiment_name(Warehouse.ExperimentDefinition, Int64) in module Warehouse at /home/datalab/projects/agents/warehouse/src/warehouse.jl:374 overwritten on the same line (check for duplicate calls to `include`).
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition a_star(LightGraphs.AbstractGraph{U}, Integer, Integer) where {U} in module LightGraphs at /home/datalab/.julia/packages/LightGraphs/IgJif/src/shortestpaths/astar.jl:67 overwritten in module Warehouse at /home/datalab/projects/agents/warehouse/src/a_star_cbs.jl:27.
+  ** incremental compilation may be fatally broken for this module **
+

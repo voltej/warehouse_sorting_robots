@@ -1,0 +1,248 @@
+┌ Info: 2021-09-09T16:30:39.278 Begin seed 39
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:31:17.909 End seed 39
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:31:17.912 Begin seed 40
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:31:49.123 End seed 40
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:31:49.123 Begin seed 41
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:32:00.383 End seed 41
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:32:00.383 Begin seed 42
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:32:11.873 End seed 42
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:32:11.873 Begin seed 43
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:32:34.998 End seed 43
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:32:34.999 Begin seed 44
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:32:57.835 End seed 44
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:32:57.835 Begin seed 45
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:33:19.806 End seed 45
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:33:19.807 Begin seed 46
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:33:45.392 End seed 46
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:33:45.393 Begin seed 47
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:34:23.386 End seed 47
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:34:23.387 Begin seed 48
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:34:37.565 End seed 48
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:34:37.566 Begin seed 49
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:34:56.871 End seed 49
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:34:56.871 Begin seed 50
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:35:10.535 End seed 50
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:35:10.536 Begin seed 51
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:35:32.997 End seed 51
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:35:32.998 Begin seed 52
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T16:35:45.134 End seed 52
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T16:35:45.135 Begin seed 53
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:07:26.041 End seed 53
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:07:26.041 Begin seed 54
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:07:47.271 End seed 54
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:07:47.271 Begin seed 55
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:07:57.527 End seed 55
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:07:57.527 Begin seed 56
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:08:18.950 End seed 56
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:08:18.950 Begin seed 57
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:08:45.538 End seed 57
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:08:45.538 Begin seed 58
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:09:06.208 End seed 58
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:09:06.209 Begin seed 59
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:09:17.318 End seed 59
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:09:17.319 Begin seed 60
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:10:13.942 End seed 60
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:10:13.943 Begin seed 61
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:10:37.668 End seed 61
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:10:37.668 Begin seed 62
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:11:04.134 End seed 62
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:11:04.135 Begin seed 63
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:11:25.210 End seed 63
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:11:25.210 Begin seed 64
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:11:50.190 End seed 64
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:11:50.190 Begin seed 65
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:12:48.406 End seed 65
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:12:48.406 Begin seed 66
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:13:11.832 End seed 66
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:13:11.832 Begin seed 67
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:13:29.028 End seed 67
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:13:29.028 Begin seed 68
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:13:59.526 End seed 68
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:13:59.527 Begin seed 69
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:14:25.673 End seed 69
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:14:25.673 Begin seed 70
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:14:49.053 End seed 70
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:14:49.054 Begin seed 71
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:15:19.705 End seed 71
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:15:19.705 Begin seed 72
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:16:15.822 End seed 72
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:16:15.823 Begin seed 73
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:17:01.278 End seed 73
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:17:01.278 Begin seed 74
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:17:21.311 End seed 74
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:17:21.311 Begin seed 75
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:17:35.069 End seed 75
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:17:35.069 Begin seed 76
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:17:51.445 End seed 76
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:17:51.445 Begin seed 77
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:18:39.605 End seed 77
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:18:39.605 Begin seed 78
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:19:00.472 End seed 78
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:19:00.473 Begin seed 79
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:19:37.931 End seed 79
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:19:37.931 Begin seed 80
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:19:51.673 End seed 80
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:19:51.673 Begin seed 81
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:20:23.498 End seed 81
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:20:23.498 Begin seed 82
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:20:39.218 End seed 82
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:20:39.218 Begin seed 83
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:21:16.341 End seed 83
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:21:16.342 Begin seed 84
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:21:34.749 End seed 84
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:21:34.750 Begin seed 85
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:21:49.936 End seed 85
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:21:49.936 Begin seed 86
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:22:05.954 End seed 86
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:22:05.954 Begin seed 87
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:22:30.082 End seed 87
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:22:30.082 Begin seed 88
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:22:38.979 End seed 88
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:22:38.979 Begin seed 89
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:22:56.822 End seed 89
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:22:56.822 Begin seed 90
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:23:17.666 End seed 90
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:23:17.667 Begin seed 91
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:23:39.817 End seed 91
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:23:39.817 Begin seed 92
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:24:15.162 End seed 92
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:24:15.162 Begin seed 93
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:24:36.150 End seed 93
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:24:36.151 Begin seed 94
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:24:52.467 End seed 94
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:24:52.468 Begin seed 95
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:25:18.243 End seed 95
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:25:18.243 Begin seed 96
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:25:31.482 End seed 96
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:25:31.482 Begin seed 97
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:25:56.965 End seed 97
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:25:56.965 Begin seed 98
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:26:25.556 End seed 98
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:26:25.556 Begin seed 99
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:27:10.888 End seed 99
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
+┌ Info: 2021-09-09T23:27:10.888 Begin seed 100
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:24
+┌ Info: 2021-09-09T23:27:21.113 End seed 100
+└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbsd17x15_1000_20.jl:33
