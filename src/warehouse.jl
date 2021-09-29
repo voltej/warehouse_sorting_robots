@@ -269,7 +269,7 @@ function robot_sizes_spots(robots,n,model,spots,robot_dests,dests,factor)
 
 end
 
-function terminate_warehouse_sim(model, step;timeout=7200)
+function terminate_warehouse_sim(model, step;timeout=900)
     if isempty(model.package_list) & all([!(agent.dest in model.dest_spot)  for agent in allagents(model)])
         return true
     elseif (now()-model.initialized)/Millisecond(1000) > timeout
