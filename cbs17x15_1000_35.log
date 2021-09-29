@@ -1,9 +1,0 @@
-┌ Info: 2021-09-06T08:51:24.779 Begin seed 1
-└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbs17x15_1000_35.jl:22
-┌ Info: 2021-09-06T10:17:18.150 End seed 1
-└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbs17x15_1000_35.jl:30
-3.33/scripts/packages/VSCodeServer/src/eval.jl:310
-┌ Info: 2021-09-06T08:56:16.801 Begin seed 100
-└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbs17x15_1000_35.jl:23
-┌ Info: 2021-09-06T12:00:00.114 End seed 100
-└ @ Main /home/datalab/projects/agents/warehouse/experiments/e_cbs17x15_1000_35.jl:32
