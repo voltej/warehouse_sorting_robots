@@ -1,5 +1,6 @@
 notebooks
 outputs
+cache
 logs
 *.log
 *.screenlog

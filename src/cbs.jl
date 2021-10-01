@@ -94,7 +94,12 @@ function warehouse_step_cbs!(model)
         paths = [a_star(model.graph, robot.pos,robot.dest) for robot in [getindex(model,idx) for idx in 1:n_agents]]
         root= CBSNode(constraints,paths,length.(paths))
 
+        start = now()
         solution = cbs(root,model.graph)
+        stop = now()
+        if Warehouse.measure_execution_time
+            println("CBS solver runtime:$(time_delta(start,stop))")
+        end
         for i in 1:n_agents
             robot = getindex(model,i)
             robot.path = solution[i]

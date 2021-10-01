@@ -205,8 +205,6 @@ function robot_sizes_spots(robots,n,model,spots,robot_dests,dests,factor)
 end
 
 
-
-
 function generate_plot()
     w,p,d = generate_warehouse_struct(17,15,d_start=2)
     graphplot(Matrix(adjacency_matrix(w)),x=p[:,2],y=p[:,1],size=(3000,3000),curves=false,arrow=true,names=1:nv(w),fontsize=20)
@@ -272,7 +270,7 @@ end
 function terminate_warehouse_sim(model, step;timeout=900)
     if isempty(model.package_list) & all([!(agent.dest in model.dest_spot)  for agent in allagents(model)])
         return true
-    elseif (now()-model.initialized)/Millisecond(1000) > timeout
+    elseif time_delta(now(), model.initialized) > timeout
         display("Timeout occured")
         return true        
     else
@@ -374,4 +372,10 @@ end
 function get_experiment_name(ed::ExperimentDefinition,seed::Int)
 
     return "$(ed.identifier)_$(ed.warehouse_definition.m)_$(ed.warehouse_definition.n)_$(ed.warehouse_definition.n_robots)_seed$(seed)"
+end
+
+
+function time_delta(start::DateTime,stop::DateTime)
+
+    return (stop-start)/Millisecond(1000)
 end
