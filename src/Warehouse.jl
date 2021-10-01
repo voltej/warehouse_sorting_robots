@@ -16,7 +16,7 @@ export ed_hw5x19_100_20, ed_cbs5x19_100_20,ed_cbsd5x19_100_20
 export ed_cbs19x5_100_20
 
 export time_delta
-export WarehouseDefinition, ExperimentDefinition, init_warehouse
+export WarehouseDefinition, ExperimentDefinition, init_warehouse, generate_warehouse_t1, generate_warehouse_t2
 measure_execution_time = true
 
 end 

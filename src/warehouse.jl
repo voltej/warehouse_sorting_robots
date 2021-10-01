@@ -1,7 +1,7 @@
 using Agents, Plots, LightGraphs, GraphRecipes, MetaGraphs, Dates
 
 
-function generate_warehouse_struct(m::Int,n::Int;d_start::Int=2,graph_type=SimpleDiGraph)
+function generate_warehouse_t1(m::Int,n::Int;d_start::Int=2,graph_type=SimpleDiGraph)
     w = graph_type() #warehouse graph
     n_m = 2 * m + 1
     n_n = 2 * n + 1
@@ -56,9 +56,9 @@ function generate_warehouse_struct(m::Int,n::Int;d_start::Int=2,graph_type=Simpl
         end
     end
 
+    dest_spot_grid = d.-(2*n+1)
 
-
-    return w,p,d
+    return w,p,d, dest_spot_grid
 
 end
 
@@ -206,7 +206,7 @@ end
 
 
 function generate_plot()
-    w,p,d = generate_warehouse_struct(17,15,d_start=2)
+    w,p,d = generate_warehouse_t1(17,15,d_start=2)
     graphplot(Matrix(adjacency_matrix(w)),x=p[:,2],y=p[:,1],size=(3000,3000),curves=false,arrow=true,names=1:nv(w),fontsize=20)
 
 end
@@ -297,7 +297,7 @@ struct WarehouseDefinition{}
     n_packages::Int
     n_robots::Int
     graph_type
-    init_warehouse
+    generator_function
     init_robots
     load_spots::Vector{Int64}  
 end
@@ -336,15 +336,15 @@ end
 
 
 function init_warehouse_with_plot(ed::WarehouseDefinition;seed=1234,factor=2)
-    m,n,n_packages,graph_type,init_warehouse,init_robots,load_spots = ed.m,ed.n,ed.n_packages,ed.graph_type,ed.init_warehouse,ed.init_robots,ed.load_spots
+    m,n,n_packages,graph_type,graph_generator,init_robots,load_spots = ed.m,ed.n,ed.n_packages,ed.graph_type,ed.init_warehouse,ed.init_robots,ed.load_spots
     
-    g,p,d = generate_warehouse_struct(m,n,graph_type=graph_type)
+    g,p,d, dest_spot_grid = graph_generator(m,n,graph_type=graph_type)
     
     warehouse= init_warehouse(g,p,d,n_packages,load_spots;seed=seed)
     init_robots(warehouse)
     
     model_props = warehouse.properties    
-    dest_spot_grid = model_props[:dest_spot].-(2*n+1)
+    # dest_spot_grid = model_props[:dest_spot].-(2*n+1)
     robot_colors = (x,y)-> robot_colors_spots(x,y,model_props[:load_spot],dest_spot_grid)
     robot_sizes = (x,y,z) -> robot_sizes_spots(x,y,z,model_props[:load_spot],model_props[:dest_spot],dest_spot_grid,factor)
     cs=fill(0.05, nv(g), nv(g));
@@ -378,4 +378,96 @@ end
 function time_delta(start::DateTime,stop::DateTime)
 
     return (stop-start)/Millisecond(1000)
+end
+
+
+function generate_warehouse_t2(b::Int,m::Int,n::Int;d_start::Int=3,graph_type=SimpleDiGraph)
+    g = graph_type() #warehouse graph
+    
+    real_n = n+2
+    n_block_vertices = m*real_n
+    total_n = real_n * b
+    
+    
+    add_vertices!(g,b*n_block_vertices)
+    
+    p = zeros(Float64,nv(g),2) #positions
+    d_grid = Int[]
+    d = Int[]
+    
+    v_all=1
+    for k in 1:b
+        #positions
+        v_start = v_all -1 
+        for j in 1:n+2
+            for i in 1:m
+
+                p[v_all,:] = [i;j+(k-1)*real_n]
+                v_all +=1
+                
+            end
+        end
+        #destinations & spots to unload
+        left_grid =  v_start + d_start                  : v_start +              m
+        left_dest =  v_start + d_start +              m : v_start +          2 * m
+        right_grid = v_start + d_start + (real_n-1) * m : v_start +   (real_n) * m
+        right_dest = v_start + d_start + (real_n-2) * m : v_start + (real_n-1) * m                
+        append!(d_grid,left_grid,right_grid)
+        append!(d, left_dest,right_dest)                
+    end
+    
+    # horizontal edges
+    # even ->
+    for i in 1:2:m
+        j_left = i
+        for j_right in i+m:m:i+m*(total_n-1)
+#             println(j_left," ",j_right)
+            if !(j_left in d_grid || j_right in d_grid)
+                add_edge!(g,j_left,j_right)
+            end
+            j_left = j_right
+            
+        end        
+    end
+    # odd <-
+    for i in 2:2:m
+        j_left = i
+        for j_right in i+m:m:i+m*(total_n-1)
+#             println(j_left," ",j_right)
+            if !(j_left in d_grid || j_right in d_grid)
+                add_edge!(g,j_right,j_left)
+            end
+            j_left = j_right
+            
+        end
+
+        
+    end
+    
+    # vertical edges
+    # up
+    for i in 1:2*m:m*(total_n)
+        j_left = i
+        for j_right in i:i+m-1
+#             println(j_left," ",j_right)
+            if !(j_left in d_grid || j_right in d_grid)
+                add_edge!(g,j_left,j_right)
+            end
+            j_left = j_right
+            
+        end        
+    end
+    for i in m+1:2*m:m*(total_n)
+        j_left = i
+        for j_right in i:i+m-1
+#             println(j_left," ",j_right)
+            if !(j_left in d_grid || j_right in d_grid)
+                add_edge!(g,j_right,j_left)                   
+            end
+            j_left = j_right
+        end        
+    end
+    
+    return g,p,d,d_grid 
+
 end
