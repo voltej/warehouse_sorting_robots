@@ -161,14 +161,14 @@ adata = [:pos, :dest,:head]
 mdata =[:last_spot,pl, :replaned,:packages_delivered];
 
 
-function robot_colors_spots(robots,n,spots,dests)
+function robot_colors_spots(robots,n,spots,dests,loads)
         
     # rc = Vector{RGBA{Float64}}(length(robots))
     # for robot in robots
     cg = cgrad(:inferno, 7, categorical = true)
     if !isempty(robots)
         return [robot.dest in spots ? cg[4] : cg[6]  for robot in robots]
-    elseif n in spots .+1
+    elseif n in loads
         return  cg[4]
     elseif n in dests
         return  cg[6]
@@ -182,29 +182,29 @@ function robot_colors_spots(robots,n,spots,dests)
     # return rc
 end
 
-function robot_sizes_spots(robots,n,model,spots,robot_dests,dests,factor)
-    if !isempty(robots)       
-        return factor
-    elseif n in spots .+1
-        return factor * 2
-    # elseif n in [robot.dest for robot in robots]
-    #     show("$n is a destination")
-    #     return factor * 2
-    elseif n in dests
-        idx = findall(x->x==n,dests)[1]
-        # rdi = typeof(robot_dests[idx])
-        # rda=typeof([robot.dest for robot in allagents(model)])
-        # test = robot_dests[idx] in [robot.dest for robot in allagents(model)]
-        if robot_dests[idx] in [robot.dest for robot in allagents(model)]
-            return factor * 2
-        else
-            return factor * 1
-        end
-    else
-        return 0
-    end
+# function robot_sizes_spots(robots,n,model,spots,robot_dests,dests,loads,factor)
+#     if !isempty(robots)       
+#         return factor
+#     elseif n in spots .+1
+#         return factor * 2
+#     # elseif n in [robot.dest for robot in robots]
+#     #     show("$n is a destination")
+#     #     return factor * 2
+#     elseif n in dests
+#         idx = findall(x->x==n,dests)[1]
+#         # rdi = typeof(robot_dests[idx])
+#         # rda=typeof([robot.dest for robot in allagents(model)])
+#         # test = robot_dests[idx] in [robot.dest for robot in allagents(model)]
+#         if robot_dests[idx] in [robot.dest for robot in allagents(model)]
+#             return factor * 2
+#         else
+#             return factor * 1
+#         end
+#     else
+#         return 0
+#     end
 
-end
+# end
 
 
 function generate_plot()
@@ -245,10 +245,11 @@ end
 #     # return rc
 # end
 
-function robot_sizes_spots(robots,n,model,spots,robot_dests,dests,factor)
+function robot_sizes_spots(robots,n,model,spots,robot_dests,dests, spots_grid,factor)
     if !isempty(robots)       
         return factor
-    elseif n in spots .+1
+    # elseif n in spots .+1
+    elseif n in spots_grid
         return factor * 2
     # elseif n in [robot.dest for robot in robots]
     #     show("$n is a destination")
@@ -338,15 +339,15 @@ end
 function init_warehouse_with_plot(ed::WarehouseDefinition;seed=1234,factor=2)
     sizes,n_packages,graph_type,graph_generator,init_robots,load_spots = ed.sizes,ed.n_packages,ed.graph_type,ed.generator_function,ed.init_robots,ed.load_spots
     
-    g,p,d, dest_spot_grid = graph_generator(sizes,graph_type=graph_type)
+    g,p,d, dest_spot_grid,load_spot_grid = graph_generator(sizes,graph_type=graph_type)
     
     warehouse= init_warehouse(g,p,d,n_packages,load_spots;seed=seed)
     init_robots(warehouse)
     
     model_props = warehouse.properties    
     # dest_spot_grid = model_props[:dest_spot].-(2*n+1)
-    robot_colors = (x,y)-> robot_colors_spots(x,y,model_props[:load_spot],dest_spot_grid)
-    robot_sizes = (x,y,z) -> robot_sizes_spots(x,y,z,model_props[:load_spot],model_props[:dest_spot],dest_spot_grid,factor)
+    robot_colors = (x,y)-> robot_colors_spots(x,y,model_props[:load_spot],dest_spot_grid,load_spot_grid)
+    robot_sizes = (x,y,z) -> robot_sizes_spots(x,y,z,model_props[:load_spot],model_props[:dest_spot],dest_spot_grid,load_spot_grid,factor)
     cs=fill(0.05, nv(g), nv(g));
 
     plot_arrows = (graph_type == SimpleDiGraph)
@@ -371,7 +372,7 @@ end
 
 function get_experiment_name(ed::ExperimentDefinition,seed::Int)
 
-    return "$(ed.identifier)_$(join(["$(k)_$(v)" for (k,v) in ed.warehouse_definition.sizes],"_"))_a$(ed.warehouse_definition.n_robots)_seed$(seed)"
+    return "$(ed.identifier)_$(join(["$(k)_$(v)" for (k,v) in ed.warehouse_definition.sizes if k !="load_spots"],"_"))_a$(ed.warehouse_definition.n_robots)_seed$(seed)"
 end
 
 
@@ -381,10 +382,17 @@ function time_delta(start::DateTime,stop::DateTime)
 end
 
 
-function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph)
+function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph,v_start = 0)
     b = sizes["b"]
     m = sizes["m"]
     n = sizes["n"]
+    load_spots = sizes["load_spots"]
+    if d_start in keys(sizes)
+        d_start = sizes["d_start"]
+    end
+    if h_start in keys(sizes)
+        v_start = sizes["v_start"]
+    end
     g = graph_type() #warehouse graph
     
     real_n = n+2
@@ -392,11 +400,12 @@ function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph)
     total_n = real_n * b
     
     
-    add_vertices!(g,b*n_block_vertices)
+    add_vertices!(g,b*n_block_vertices+length(load_spots))
     
     p = zeros(Float64,nv(g),2) #positions
     d_grid = Int[]
     d = Int[]
+    l_grid=Int[]
     
     v_all=1
     for k in 1:b
@@ -472,6 +481,13 @@ function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph)
         end        
     end
     
-    return g,p,d,d_grid 
-end
+    for (i,v) in enumerate(load_spots)
+        l_grid_id = b*n_block_vertices+i
+        p[l_grid_id,:] = p[v,:] + [-1,0]
+        append!(l_grid,l_grid_id)
+    end
 
+    add_edge!(g,nv(g),nv(g)) # Fix to plot bug
+
+    return g,p,d,d_grid,l_grid
+end
