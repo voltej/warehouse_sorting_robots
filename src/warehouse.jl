@@ -1,7 +1,9 @@
 using Agents, Plots, LightGraphs, GraphRecipes, MetaGraphs, Dates
 
 
-function generate_warehouse_t1(m::Int,n::Int;d_start::Int=2,graph_type=SimpleDiGraph)
+function generate_warehouse_t1(sizes::Dict;d_start::Int=2,graph_type=SimpleDiGraph)
+    m = sizes["m"]
+    n = sizes["n"]
     w = graph_type() #warehouse graph
     n_m = 2 * m + 1
     n_n = 2 * n + 1
@@ -292,8 +294,7 @@ function give_robot_destination(robot,model)
 end
 
 struct WarehouseDefinition{}
-    m::Int
-    n::Int
+    sizes::Dict
     n_packages::Int
     n_robots::Int
     graph_type
@@ -301,6 +302,7 @@ struct WarehouseDefinition{}
     init_robots
     load_spots::Vector{Int64}  
 end
+
 
 struct ExperimentDefinition
     identifier::String
@@ -333,12 +335,10 @@ function init_warehouse(g,p,d,n_packages,load_spots;seed=1234)
     return warehouse
 end
 
-
-
 function init_warehouse_with_plot(ed::WarehouseDefinition;seed=1234,factor=2)
-    m,n,n_packages,graph_type,graph_generator,init_robots,load_spots = ed.m,ed.n,ed.n_packages,ed.graph_type,ed.init_warehouse,ed.init_robots,ed.load_spots
+    sizes,n_packages,graph_type,graph_generator,init_robots,load_spots = ed.sizes,ed.n_packages,ed.graph_type,ed.generator_function,ed.init_robots,ed.load_spots
     
-    g,p,d, dest_spot_grid = graph_generator(m,n,graph_type=graph_type)
+    g,p,d, dest_spot_grid = graph_generator(sizes,graph_type=graph_type)
     
     warehouse= init_warehouse(g,p,d,n_packages,load_spots;seed=seed)
     init_robots(warehouse)
@@ -371,7 +371,7 @@ end
 
 function get_experiment_name(ed::ExperimentDefinition,seed::Int)
 
-    return "$(ed.identifier)_$(ed.warehouse_definition.m)_$(ed.warehouse_definition.n)_$(ed.warehouse_definition.n_robots)_seed$(seed)"
+    return "$(ed.identifier)_$(join(["$(k)_$(v)" for (k,v) in ed.warehouse_definition.sizes],"_"))_a$(ed.warehouse_definition.n_robots)_seed$(seed)"
 end
 
 
@@ -381,7 +381,10 @@ function time_delta(start::DateTime,stop::DateTime)
 end
 
 
-function generate_warehouse_t2(b::Int,m::Int,n::Int;d_start::Int=3,graph_type=SimpleDiGraph)
+function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph)
+    b = sizes["b"]
+    m = sizes["m"]
+    n = sizes["n"]
     g = graph_type() #warehouse graph
     
     real_n = n+2
@@ -448,7 +451,7 @@ function generate_warehouse_t2(b::Int,m::Int,n::Int;d_start::Int=3,graph_type=Si
     # up
     for i in 1:2*m:m*(total_n)
         j_left = i
-        for j_right in i:i+m-1
+        for j_right in i+1:i+m-1
 #             println(j_left," ",j_right)
             if !(j_left in d_grid || j_right in d_grid)
                 add_edge!(g,j_left,j_right)
@@ -457,9 +460,10 @@ function generate_warehouse_t2(b::Int,m::Int,n::Int;d_start::Int=3,graph_type=Si
             
         end        
     end
+    # down
     for i in m+1:2*m:m*(total_n)
         j_left = i
-        for j_right in i:i+m-1
+        for j_right in i+1:i+m-1
 #             println(j_left," ",j_right)
             if !(j_left in d_grid || j_right in d_grid)
                 add_edge!(g,j_right,j_left)                   
@@ -469,5 +473,5 @@ function generate_warehouse_t2(b::Int,m::Int,n::Int;d_start::Int=3,graph_type=Si
     end
     
     return g,p,d,d_grid 
-
 end
+

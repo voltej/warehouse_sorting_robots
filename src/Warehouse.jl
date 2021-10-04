@@ -17,6 +17,8 @@ export ed_cbs19x5_100_20
 
 export time_delta
 export WarehouseDefinition, ExperimentDefinition, init_warehouse, generate_warehouse_t1, generate_warehouse_t2
+export robot_step_highway_nowait!,warehouse_step_highway!,robot_step_cbs!, warehouse_step_cbs!,Robot
+
 measure_execution_time = true
 
 end 
