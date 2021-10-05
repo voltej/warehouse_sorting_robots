@@ -4,6 +4,7 @@ using MetaGraphs
 using DataStructures:PriorityQueue, enqueue!, dequeue!,nil,MutableLinkedList
 import LightGraphs:a_star
 # using Graphs
+using Logging
 include("warehouse.jl")
 
 # %%
@@ -120,7 +121,7 @@ function a_star_time(g::AbstractGraph{U},  # the g
     heuristic::Function=n -> zero(T)) where {T, U, ET}                    
 
     E = Edge{eltype(g)}
-
+    reconstruct_path!
     # if we do checkbounds here, we can use @inbounds in a_star_impl!
     checkbounds(distmx, Base.OneTo(nv(g)), Base.OneTo(nv(g)))
 
@@ -208,7 +209,7 @@ function add_constraint!(constraints,ai,time,edge)
     end
 end
 #%%
-function cbs(root::CBSNode,graph::AbstractGraph)
+function cbs(root::CBSNode,graph::AbstractGraph,initialized::DateTime)
     CBSTree = PriorityQueue{CBSNode,Float64}(Base.Order.Forward)
     enqueue!(CBSTree,root,node_cost(root))
     
@@ -220,6 +221,12 @@ function cbs(root::CBSNode,graph::AbstractGraph)
         end
 
         for ai in agents_in_conflict
+            if time_delta(initialized,now()) > Warehouse.timeout                       
+                println("CBS timeout")
+                global_logger()
+                @info "CBS timeout"
+                return best_node.path
+            end
             ai_node = deepcopy(best_node)
             add_constraint!(ai_node.constraint,ai,conflict_time,ai_node.path[ai][conflict_time])
             tsg, tsg_dest = create_time_space_graph(graph,ai_node.path[ai][1].src,ai_node.path[ai][end].dst,ai_node.constraint[ai])

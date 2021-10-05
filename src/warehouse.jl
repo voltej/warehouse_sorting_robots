@@ -270,10 +270,13 @@ function robot_sizes_spots(robots,n,model,spots,robot_dests,dests, spots_grid,fa
 
 end
 
-function terminate_warehouse_sim(model, step;timeout=900)
+function terminate_warehouse_sim(model, step;timeout=nothing)
+    if timeout === nothing
+        timeout = Warehouse.timeout
+    end
     if isempty(model.package_list) & all([!(agent.dest in model.dest_spot)  for agent in allagents(model)])
         return true
-    elseif time_delta(now(), model.initialized) > timeout
+    elseif time_delta(model.initialized,now()) > timeout
         display("Timeout occured")
         return true        
     else
@@ -445,7 +448,7 @@ function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph,v_m
     for i in 2:2:m
         j_left = i
         for j_right in i+m:m:i+m*(total_n-1)
-#             println(j_left," ",j_right)
+#             println(j_left," ",j_right)$(time_delta(start,stop))
             if !(j_left in d_grid || j_right in d_grid)
                 add_edge!(g,j_right,j_left)
             end
