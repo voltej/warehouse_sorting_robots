@@ -24,7 +24,7 @@ for seed in seeds
     flush(logio)
     Random.seed!(seed)
     name =  get_experiment_name(ed,seed)
-    @time warehouse, plot_warehouse = init_warehouse_with_plot(ed.warehouse_definition;seed=seed)
+    warehouse, plot_warehouse = init_warehouse_with_plot(ed.warehouse_definition;seed=seed)
     adf, mdf = run!(warehouse, ed.robot_step,ed.warehouse_step,terminate_warehouse_sim; 
     adata=adata,mdata=mdata,agents_first=true)
     CSV.write("$(edir)$(name)_adata.csv",adf)

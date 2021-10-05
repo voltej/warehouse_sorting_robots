@@ -95,7 +95,7 @@ function warehouse_step_cbs!(model)
         root= CBSNode(constraints,paths,length.(paths))
 
         start = now()
-        solution = cbs(root,model.graph)
+        solution = cbs(root,model.graph,model.initialized)
         stop = now()
         if Warehouse.measure_execution_time
             println("CBS solver runtime:$(time_delta(start,stop))")
