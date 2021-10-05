@@ -16,7 +16,7 @@ function robot_step_highway!(robot,model)
             robot.dest = model.dest_spot[next_package_dest]
             move_now = false
             robot.path = []
-        elseif isempty(model.package_list) & (robot.pos in model.load_spot) & (robot.dest in model.load_spot)
+        elseif isempty(model.package_list) & (robot.pos in model.load_spot) & (robot.dest in model.load_spot)            
             move_now=false
         elseif robot.dest == robot.pos# muze vykladat
             robot.dest = 0
@@ -48,6 +48,53 @@ function warehouse_step_highway!(model)
         model.step += 1
 end;
 
+# function robot_step_highway_nowait!(robot,model)
+    
+#     move_now = true    
+# #     println(model.step)
+#     # if isempty(nearby_ids(robot,model))
+#     # if !(robot.dest in [robot.pos for robot in nearby_agents(robot,model)])
+    
+#     if robot_in_destination(robot,model)
+#         robot.dest = 0
+#         if !(robot.pos in model.load_spot)
+#             model.packages_delivered += 1
+#         end
+#     end
+    
+#     if robot.dest == 0        
+#         give_robot_destination(robot,model)                                                     
+#     end
+    
+#     if isempty(model.package_list) & (robot.pos in model.load_spot) & (robot.dest in model.load_spot)
+#         move_now=false
+#     end
+    
+      
+            
+#     if move_now == true #& ~isempty(robot.path)
+#         if isempty(robot.path) & (robot.dest != 0 )
+#             robot.path = a_star(model.graph,robot.pos,robot.dest)
+#         end
+#         if !isempty(robot.path)
+# #               move_agent!(robot,next_step,model)
+#                 popfirst!(robot.path)
+#                 robot.moved +=1
+#             end
+#         end
+#     end            
+    
+# end          
+#          move_agent!(robot,next_step,model)
+#                 popfirst!(robot.path)
+#                 robot.moved +=1
+#             end
+#         end
+#     end            
+    
+# end          
+
+# Circucalte
 function robot_step_highway_nowait!(robot,model)
     
     move_now = true    
@@ -67,7 +114,13 @@ function robot_step_highway_nowait!(robot,model)
     end
     
     if isempty(model.package_list) & (robot.pos in model.load_spot) & (robot.dest in model.load_spot)
-        move_now=false
+#         move_now=false
+        if robot.pos == model.load_spot[end]
+            robot.dest = model.load_spot[1]
+        else
+            robot.dest = model.load_spot[end]
+        end
+
     end
     
       
@@ -90,6 +143,4 @@ function robot_step_highway_nowait!(robot,model)
     end            
     
 end          
-
-
 

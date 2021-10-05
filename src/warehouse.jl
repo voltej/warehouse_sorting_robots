@@ -382,16 +382,16 @@ function time_delta(start::DateTime,stop::DateTime)
 end
 
 
-function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph,v_start = 0)
+function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph,v_mod = false)
     b = sizes["b"]
     m = sizes["m"]
     n = sizes["n"]
     load_spots = sizes["load_spots"]
-    if d_start in keys(sizes)
+    if "d_start" in keys(sizes)
         d_start = sizes["d_start"]
     end
-    if h_start in keys(sizes)
-        v_start = sizes["v_start"]
+    if "v_mod" in keys(sizes)
+        v_mod = sizes["v_mod"]
     end
     g = graph_type() #warehouse graph
     
@@ -488,6 +488,18 @@ function generate_warehouse_t2(sizes;d_start::Int=4,graph_type=SimpleDiGraph,v_s
     end
 
     add_edge!(g,nv(g),nv(g)) # Fix to plot bug
+
+    if v_mod    
+        et = edgetype(g)
+        for i in 1:m:m*(total_n)
+            rem_edge!(g,et(i,i+1))
+                rem_edge!(g,et(i+1,i))
+        end
+        add_edge!(g,2,1)
+        add_edge!(g,(m)*(total_n-1)+1,(m)*(total_n-1)+1 + 1)
+    end
+    
+
 
     return g,p,d,d_grid,l_grid
 end
