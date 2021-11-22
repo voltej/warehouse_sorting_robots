@@ -5,6 +5,7 @@ logs
 *.log
 *.screenlog
 
+
 experiments/cbs119x5_100_20/
 experiments/cbs17x15_1000_20/
 experiments/cbs17x15_1000_20_1/
