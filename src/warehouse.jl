@@ -59,8 +59,9 @@ function generate_warehouse_t1(sizes::Dict;d_start::Int=2,graph_type=SimpleDiGra
     end
 
     dest_spot_grid = d.-(2*n+1)
-
-    return w,p,d, dest_spot_grid
+    load_spot_gird = sizes["load_spots"].+1
+                     
+    return w,p,d, dest_spot_grid, load_spot_gird
 
 end
 
@@ -342,6 +343,10 @@ end
 function init_warehouse_with_plot(ed::WarehouseDefinition;seed=1234,factor=2)
     sizes,n_packages,graph_type,graph_generator,init_robots,load_spots = ed.sizes,ed.n_packages,ed.graph_type,ed.generator_function,ed.init_robots,ed.load_spots
     
+    if !haskey(sizes,"load_spots")
+       sizes = Dict("m"=>sizes["m"],"n"=>sizes["n"],"load_spots"=>load_spots)
+    end
+
     g,p,d, dest_spot_grid,load_spot_grid = graph_generator(sizes,graph_type=graph_type)
     
     warehouse= init_warehouse(g,p,d,n_packages,load_spots;seed=seed)

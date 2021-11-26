@@ -20,6 +20,6 @@ export WarehouseDefinition, ExperimentDefinition, init_warehouse, generate_wareh
 export robot_step_highway_nowait!,warehouse_step_highway!,robot_step_cbs!, warehouse_step_cbs!,Robot
 
 measure_execution_time = true
-timeout = 120
+timeout = 36000
 
 end 

@@ -216,17 +216,17 @@ function cbs(root::CBSNode,graph::AbstractGraph,initialized::DateTime)
     while !isempty(CBSTree)
         best_node = dequeue!(CBSTree)
         agents_in_conflict,conflict_time = first_conflict(best_node)
-        if isempty(agents_in_conflict)
+        if isempty(agents_in_conflict) || minimum(best_node.cost) < conflict_time
             return best_node.path
         end
 
         for ai in agents_in_conflict
-            if time_delta(initialized,now()) > Warehouse.timeout                       
-                println("CBS timeout")
-                global_logger()
-                @info "CBS timeout"
-                return best_node.path
-            end
+            # if time_delta(initialized,now()) > Warehouse.timeout                       
+            #     println("CBS timeout")
+            #     global_logger()
+            #     @info "CBS timeout"
+            #     return best_node.path
+            # end
             ai_node = deepcopy(best_node)
             add_constraint!(ai_node.constraint,ai,conflict_time,ai_node.path[ai][conflict_time])
             tsg, tsg_dest = create_time_space_graph(graph,ai_node.path[ai][1].src,ai_node.path[ai][end].dst,ai_node.constraint[ai])
