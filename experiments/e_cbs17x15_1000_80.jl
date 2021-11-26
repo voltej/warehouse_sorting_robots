@@ -20,10 +20,10 @@ function init_robots_17x15_60(warehouse)
         add_agent!(Robot(i+40,j,0,1,[],0,0),j, warehouse)
         # n_agents += 1
     end
-    # for (i,j) in enumerate(25:31:614)
-    #     add_agent!(Robot(i+60,j,0,1,[],0,0),j, warehouse)
-    #     # n_agents += 1
-    # end
+    for (i,j) in enumerate(25:31:614)
+        add_agent!(Robot(i+60,j,0,1,[],0,0),j, warehouse)
+        # n_agents += 1
+    end
 end
 load_spots_17x15 = collect(32:4:60);
 wh17x15_1000_60_undirected = WarehouseDefinition(Dict("m"=>17,"n"=>15),1000,20,SimpleGraph,generate_warehouse_t1,init_robots_17x15_60,load_spots_17x15)
