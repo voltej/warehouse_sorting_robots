@@ -26,12 +26,12 @@ function init_robots_17x15_60(warehouse)
     # end
 end
 load_spots_17x15 = collect(32:4:60);
-wh17x15_1000_60_undirected = WarehouseDefinition(Dict("m"=>17,"n"=>15),1000,20,SimpleGraph,generate_warehouse_t1,init_robots_17x15_60,load_spots_17x15)
-ed_cbs17x15_1000_60 = ExperimentDefinition( "cbs17x15_1000_60",wh17x15_1000_60_undirected, robot_step_cbs!,warehouse_step_cbs!)
+wh17x15_1000_60_directed = WarehouseDefinition(Dict("m"=>17,"n"=>15),1000,20,SimpleDiGraph,generate_warehouse_t1,init_robots_17x15_60,load_spots_17x15)
+ed_hw17x15_1000_60 = ExperimentDefinition( "hwd17x15_1000_60",wh17x15_1000_60_directed, robot_step_highway_nowait!,warehouse_step_highway!)
 
 
 
-ed = ed_cbs17x15_1000_60
+ed = ed_hw17x15_1000_60
      
 edir ="experiments/$(ed.identifier)/"  
 if !isdir(edir)
@@ -52,7 +52,6 @@ else
 end
 # seed=1
 for seed in seed_start:seed_end
-for seed in 1:100
     display(seed)
     @info "$(now()) Begin seed $(seed)"
     flush(logio)

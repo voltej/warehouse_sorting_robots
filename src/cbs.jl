@@ -98,7 +98,8 @@ function warehouse_step_cbs!(model)
         solution = cbs(root,model.graph,model.initialized)
         stop = now()
         if Warehouse.measure_execution_time
-            println("CBS solver runtime:$(time_delta(start,stop))")
+            println("CBS solver runtime:$(time_delta(start,stop)), packages delivered: $(model.packages_delivered)")
+            
         end
         for i in 1:n_agents
             robot = getindex(model,i)

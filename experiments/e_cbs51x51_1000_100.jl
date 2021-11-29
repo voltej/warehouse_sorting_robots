@@ -9,7 +9,7 @@ using LightGraphs
 
 #%%
 function init_robots_51x51_100(warehouse)
-    for (i,j) in enumerate(103:103:10609)
+    for (i,j) in enumerate(103:103:10300)
         add_agent!(Robot(i,j,0,1,[],0,0),j, warehouse)
         # n_agents += 1
     end
@@ -18,10 +18,10 @@ end
 load_spots_51x51 = collect(104:4:206);
 
 
-wh51x51_1000_100_undirected = WarehouseDefinition(Dict("m"=>51,"n"=>51),1000,100,SimpleGraph,generate_warehouse_t1,init_robots_51x51_100,load_spots_51x51)
-ed_cbs51x51_1000_100 = ExperimentDefinition("cbs51x51_1000_100",wh51x51_1000_100_undirected, robot_step_cbs!,warehouse_step_cbs!)
+wh51x51_300_100_undirected = WarehouseDefinition(Dict("m"=>51,"n"=>51),300,100,SimpleGraph,generate_warehouse_t1,init_robots_51x51_100,load_spots_51x51)
+ed_cbs51x51_300_100 = ExperimentDefinition("cbs51x51_300_100",wh51x51_300_100_undirected, robot_step_cbs!,warehouse_step_cbs!)
 
-ed = ed_cbs51x51_1000_100
+ed = ed_cbs51x51_300_100
      
 edir ="/home/datalab/projects/agents/warehouse/experiments/$(ed.identifier)"  
 if !isdir(edir)
