@@ -8,15 +8,15 @@ using LightGraphs
 
 #%%
 function init_robots_17x15_60(warehouse)
-    for (i,j) in enumerate(31:31:620)
+    for (i,j) in enumerate(155:31:434)
         add_agent!(Robot(i,j,0,1,[],0,0),j, warehouse)
         # n_agents += 1
     end
-    for (i,j) in enumerate(29:31:618)
+    for (i,j) in enumerate(153:31:432)
         add_agent!(Robot(i+20,j,0,1,[],0,0),j, warehouse)
         # n_agents += 1
     end
-    for (i,j) in enumerate(27:31:616)
+    for (i,j) in enumerate(151:31:430)
         add_agent!(Robot(i+40,j,0,1,[],0,0),j, warehouse)
         # n_agents += 1
     end
